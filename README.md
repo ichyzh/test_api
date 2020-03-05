@@ -10,7 +10,7 @@
     <img src="./storage/examples/delete.png">
 </p>
 <hr>
-<p>To add user select method GET on link http://127.0.0.1:8000/api/users</p>
+<p>To get added users tweets select method GET on link http://127.0.0.1:8000/api/users</p>
 <p>Example:
     <img src="./storage/examples/get.png">
 </p>
