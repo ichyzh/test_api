@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Http\Integrarions\TwitterApi;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class UserResource extends JsonResource
@@ -14,10 +15,12 @@ class UserResource extends JsonResource
      */
     public function toArray($request)
     {
+        $twitter = new TwitterApi();
+
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'tweets' => []
+            'tweets' => $twitter->getTweets($this->name)
           ];
     }
 }

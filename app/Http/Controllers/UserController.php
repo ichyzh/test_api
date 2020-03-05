@@ -33,24 +33,16 @@ class UserController extends Controller
 
         if ($validator->fails()) {
             return response()->json($validator->errors(), 203);
-       }
+        }
 
         $user = User::create([
             'name' => $request->name
         ]);
 
-        return new UserResource($user);
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
+        return response()->json([
+            'id' => $user->id,
+            'name' => $user->name
+        ], 200);
     }
 
     /**
