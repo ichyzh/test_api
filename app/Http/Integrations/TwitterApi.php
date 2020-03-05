@@ -6,10 +6,10 @@ use App\User;
 
 class TwitterApi
 {
-    private $access_token = '1235177379980627970-ppbo1aLvIO2ObCfv5WNJ9Wpv7XQ93e';
-    private $acces_token_secret = 'AQok59obBgGRaTpn5F1e9ZdIyh9smwDQ8SWDzaL7qlAKo';
-    private $consumer_key = 'kxVDVFbNDDG9Ef9Tbe6dGeQ8B';
-    private $consumer_secret = 'xpvpi9Qy62rgFqfgzTRfgnbENHhDgyB8aXtWDX36C8DJVqho2f';
+    private $access_token = 'token';
+    private $acces_token_secret = 'token-secret';
+    private $consumer_key = 'key';
+    private $consumer_secret = 'secret';
 
     /**
      * Number of posts from user
